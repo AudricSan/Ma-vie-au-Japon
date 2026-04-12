@@ -1,3 +1,8 @@
+/* ============================================================
+   Home – première entrée, articles récents, cartes catégories
+   ============================================================ */
+
+/* ── Première entrée mise en avant ─────────────────────── */
 .first-entry {
     position: relative;
     margin-bottom: var(--gap);
@@ -8,15 +13,14 @@
     border: 1px solid var(--border);
 }
 
-.home-recent-posts{
+/* ── Section articles récents ───────────────────────────── */
+.home-recent-posts {
     margin-top: 2em;
 
-    h2{
-        margin-bottom: var(--gap);
-    }
+    h2 { margin-bottom: var(--gap); }
 }
 
-/* ===== Page Blog : index des catégories ===== */
+/* ── Grille des catégories ──────────────────────────────── */
 .blog-categories {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -25,13 +29,13 @@
     align-items: start;
 }
 
+/* ── Carte catégorie ────────────────────────────────────── */
 .blog-category {
     border: 1px solid var(--border);
     border-radius: var(--radius);
     background: var(--entry);
     overflow: hidden;
 
-    /* En-tête de la carte catégorie */
     .category-header {
         padding: var(--gap) var(--gap) 0.5em;
         border-bottom: 1px solid var(--border);
@@ -45,9 +49,7 @@
             color: var(--primary);
             text-decoration: none;
 
-            &:hover {
-                text-decoration: underline;
-            }
+            &:hover { text-decoration: underline; }
         }
     }
 
@@ -57,7 +59,7 @@
         margin: 0;
     }
 
-    /* Carte intérieure des articles */
+    /* Articles dans la carte */
     .category-articles {
         display: flex;
         flex-direction: column;
@@ -72,13 +74,8 @@
             transition: background 0.15s ease;
             background-color: color-mix(in srgb, var(--primary) 5%, transparent);
 
-            &:last-child {
-                border-bottom: none;
-            }
-
-            &:hover {
-                background: var(--tertiary);
-            }
+            &:last-child { border-bottom: none; }
+            &:hover { background: var(--tertiary); }
 
             .entry-header h3 {
                 margin: 0;
@@ -116,9 +113,7 @@
         color: var(--primary);
         text-decoration: none;
 
-        &:hover {
-            text-decoration: underline;
-        }
+        &:hover { text-decoration: underline; }
     }
 
     .no-articles {

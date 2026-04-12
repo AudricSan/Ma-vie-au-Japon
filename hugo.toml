@@ -1,8 +1,8 @@
 # =========================
 # BASE CONFIG
 # =========================
-baseURL = "https://blog.audricrosier.be"
-canonicalURL = "https://blog.audricrosier.be"
+baseURL = "https://blog.audricrosier.be/"
+canonicalURL = "https://blog.audricrosier.be/"
 title = "Ma vie au Japon – Blog d’expatriation, conseils et démarches"
 theme = "papermod"
 
@@ -57,6 +57,21 @@ locale = "fr-fr"
   ShowReadingTime = true
   ShowBreadCrumbs = true
   mainSections = ["Blog"]
+
+  # Réseaux sociaux (footer + page d'accueil)
+  # Noms d'icônes disponibles : twitter, instagram, facebook, youtube, github, linkedin, etc.
+  # Supprimer ou commenter les entrées non souhaitées.
+  [[params.socialIcons]]
+    name = "instagram"
+    url  = "https://www.instagram.com/TON_COMPTE"
+
+  [[params.socialIcons]]
+    name = "twitter"
+    url  = "https://twitter.com/TON_COMPTE"
+
+  [[params.socialIcons]]
+    name = "youtube"
+    url  = "https://www.youtube.com/@TON_COMPTE"
 
   # Images (PaperMod)
   [params.cover]

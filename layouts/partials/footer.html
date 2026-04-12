@@ -1,0 +1,178 @@
+{{- if not (.Param "hideFooter") }}
+
+<footer class="site-footer" aria-label="Pied de page">
+
+  <div class="site-footer__inner">
+
+    {{/* ── Brand ─────────────────────────────────── */}}
+    <div class="site-footer__brand">
+      <a href="{{ "/" | absLangURL }}" class="site-footer__logo" aria-label="Ma vie au Japon – Accueil">
+        <span class="brand-name">Ma vie au Japon</span>
+        <span class="brand-sub" aria-hidden="true">日本での生活</span>
+      </a>
+
+      <p class="site-footer__desc">
+        Le quotidien d'un Belge installé au Japon —
+        démarches, visa, culture et récits.
+      </p>
+
+      <span class="site-footer__location" aria-label="Basé au Japon">
+        <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="13" height="13" fill="currentColor">
+          <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+        </svg>
+        Japon
+      </span>
+
+      {{- with site.Params.socialIcons }}
+      <div class="site-footer__social" role="list" aria-label="Réseaux sociaux">
+        {{- range . }}
+        <a class="site-footer__social-link"
+           href="{{ trim .url " " | safeURL }}"
+           target="_blank"
+           rel="noopener noreferrer me"
+           title="{{ (.title | default .name) | title }}"
+           role="listitem">
+          {{ partial "svg.html" . }}
+        </a>
+        {{- end }}
+      </div>
+      {{- end }}
+    </div>
+
+    {{/* ── Navigation ──────────────────────────── */}}
+    <nav class="site-footer__col" aria-label="Navigation principale">
+      <h3 class="site-footer__heading">Navigation</h3>
+      <ul class="site-footer__list">
+        <li><a href="{{ "/" | absLangURL }}">Accueil</a></li>
+        <li><a href="{{ "/Blog/" | absLangURL }}">Blog</a></li>
+        <li><a href="{{ "/About/" | absLangURL }}">À propos</a></li>
+        <li><a href="{{ "/Contact/" | absLangURL }}">Contact</a></li>
+      </ul>
+    </nav>
+
+    {{/* ── Catégories = sections Blog ──────────── */}}
+    <nav class="site-footer__col" aria-label="Catégories">
+      <h3 class="site-footer__heading">Catégories</h3>
+      <ul class="site-footer__list">
+        <li><a href="{{ "/Blog/info/" | absLangURL }}">Guides pratiques</a></li>
+        <li><a href="{{ "/Blog/histoire/" | absLangURL }}">Récits</a></li>
+      </ul>
+    </nav>
+
+    {{/* ── Légal ───────────────────────────────── */}}
+    <div class="site-footer__col">
+      <h3 class="site-footer__heading">Légal</h3>
+      <ul class="site-footer__list">
+        <li><a href="{{ "/mentions-legales/" | absLangURL }}">Mentions légales</a></li>
+        <li><a href="{{ "/confidentialite/" | absLangURL }}">Confidentialité</a></li>
+        <li><a href="{{ "/index.xml" | absLangURL }}" type="application/rss+xml">RSS</a></li>
+        <li><a href="/sitemap.xml">Sitemap</a></li>
+      </ul>
+    </div>
+
+  </div>
+
+  {{/* ── Barre inférieure ───────────────────── */}}
+  <div class="site-footer__bottom">
+    <span>&copy; {{ now.Year }} {{ site.Params.author | default site.Title }}</span>
+  </div>
+
+</footer>
+
+{{- end }}
+
+
+{{/* ── Bouton retour en haut (PaperMod) ─── */}}
+{{- if (not site.Params.disableScrollToTop) }}
+<a href="#top" id="top-link" class="top-link hidden" aria-label="Retour en haut" title="Haut de page (Alt + G)" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevrons-up">
+        <polyline points="17 11 12 6 7 11"></polyline>
+        <polyline points="17 18 12 13 7 18"></polyline>
+    </svg>
+</a>
+{{- end }}
+
+{{- partial "extend_footer.html" . }}
+
+{{/* ── Scripts PaperMod ──────────────────── */}}
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) menu.scrollLeft = parseInt(scrollPosition, 10);
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        };
+    }
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({ behavior: "smooth" });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") { history.replaceState(null, null, " "); }
+            else { history.pushState(null, null, `#${id}`); }
+        });
+    });
+</script>
+
+{{- if (not site.Params.disableScrollToTop) }}
+<script>
+    var toplink = document.getElementById("top-link");
+    window.onscroll = function () {
+        const t = window.innerHeight;
+        if (document.body.scrollTop > t || document.documentElement.scrollTop > t) {
+            toplink.classList.remove("hidden");
+        } else { toplink.classList.add("hidden"); }
+    };
+</script>
+{{- end }}
+
+{{- if (not site.Params.disableThemeToggle) }}
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            html.dataset.theme = 'dark';
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    });
+</script>
+{{- end }}
+
+{{- if (and (eq .Kind "page") (ne .Layout "archives") (ne .Layout "search") (.Param "ShowCodeCopyButtons")) }}
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = '{{- i18n "code_copy" | default "copy" }}';
+        function copyingDone() {
+            copybutton.innerHTML = '{{- i18n "code_copied" | default "copied!" }}';
+            setTimeout(() => { copybutton.innerHTML = '{{- i18n "code_copy" | default "copy" }}'; }, 2000);
+        }
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) { navigator.clipboard.writeText(codeblock.textContent); copyingDone(); return; }
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try { document.execCommand('copy'); copyingDone(); } catch (e) {}
+            selection.removeRange(range);
+        });
+        if (container.classList.contains("highlight")) { container.appendChild(copybutton); }
+        else if (container.parentNode.firstChild == container) { /* td LineNos */ }
+        else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else { codeblock.parentNode.appendChild(copybutton); }
+    });
+</script>
+{{- end }}
