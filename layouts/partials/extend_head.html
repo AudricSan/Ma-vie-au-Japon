@@ -1,0 +1,9 @@
+{{ $style := resources.Get "scss/main.scss" | toCSS | minify }}
+<link rel="stylesheet" href="{{ $style.RelPermalink }}">
+
+{{- /* og:locale:alternate — annonce les traductions disponibles aux réseaux sociaux et moteurs */}}
+{{- range .AllTranslations }}
+  {{- if ne .Lang $.Lang }}
+<meta property="og:locale:alternate" content="{{ replace .Language.LanguageCode `-` `_` }}">
+  {{- end }}
+{{- end }}

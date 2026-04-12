@@ -1,0 +1,208 @@
+/* ===== Correction overflow PaperMod (bloque les dropdowns) ===== */
+#menu {
+    overflow: visible !important;
+    white-space: normal;
+}
+
+.header-nav {
+    overflow: visible;
+}
+
+.header {
+    overflow: visible;
+}
+
+/* ===== Sous-menus desktop ===== */
+#menu li.has-submenu {
+    position: relative;
+}
+
+/* Indicateur : fine ligne sous le lien parent au survol */
+#menu li.has-submenu > a {
+    position: relative;
+}
+
+#menu li.has-submenu > a::after {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: var(--primary);
+    border-radius: 2px;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.2s ease;
+}
+
+#menu li.has-submenu:hover > a::after {
+    transform: scaleX(1);
+}
+
+/* Dropdown */
+#menu li.has-submenu > .submenu {
+    display: block;
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 50%;
+    transform: translateX(-50%) translateY(-6px);
+    background: var(--theme);
+    border-radius: 10px;
+    padding: 6px;
+    min-width: 0;
+    z-index: 200;
+    list-style: none;
+    margin: 0;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12), 0 2px 8px rgba(0, 0, 0, 0.06);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+/* Petit pont invisible pour ne pas perdre le hover */
+#menu li.has-submenu > .submenu::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: 0;
+    right: 0;
+    height: 10px;
+}
+
+#menu li.has-submenu:hover > .submenu {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateX(-50%) translateY(0);
+}
+
+#menu li.has-submenu > .submenu li {
+    margin: 0;
+}
+
+#menu li.has-submenu > .submenu li a {
+    display: block;
+    padding: 7px 16px;
+    white-space: nowrap;
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--primary);
+    border-radius: 6px;
+    transition: background 0.15s ease, color 0.15s ease;
+    text-decoration: none;
+}
+
+#menu li.has-submenu > .submenu li a:hover {
+    background: var(--tertiary);
+}
+
+/* ===== Bouton hamburger ===== */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 24px;
+    height: 18px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 201;
+    order: 3;
+}
+
+.hamburger span {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: var(--primary);
+    border-radius: 2px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.hamburger[aria-expanded="true"] span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger[aria-expanded="true"] span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger[aria-expanded="true"] span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+/* ===== Menu responsive mobile ===== */
+@media (max-width: 768px) {
+    .header-nav {
+        flex-wrap: wrap;
+        position: relative;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    #menu {
+        display: none !important;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: var(--theme);
+        border-top: 1px solid var(--border);
+        padding: 8px 0;
+        margin: 0;
+        width: 100%;
+        z-index: 199;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        white-space: normal;
+    }
+
+    #menu.menu-open {
+        display: flex !important;
+    }
+
+    #menu li {
+        width: 100%;
+        padding: 0;
+        margin: 0 !important;
+    }
+
+    #menu li a {
+        display: block;
+        padding: 10px 20px;
+        font-size: 15px;
+    }
+
+    /* Sous-menus mobile : toujours visibles inline */
+    #menu li.has-submenu > .submenu {
+        display: block !important;
+        position: static;
+        border: none;
+        box-shadow: none;
+        padding: 0;
+        background: transparent;
+        min-width: unset;
+        opacity: 1;
+        pointer-events: auto;
+        transform: none;
+        transition: none;
+    }
+
+    #menu li.has-submenu > .submenu::before {
+        display: none;
+    }
+
+    #menu li.has-submenu > .submenu li a {
+        padding: 8px 20px 8px 36px;
+        font-size: 14px;
+        color: var(--secondary);
+    }
+
+    /* Masquer le chevron en mobile (sous-menu toujours visible) */
+    #menu li.has-submenu > a::after {
+        display: none;
+    }
+}

@@ -1,0 +1,70 @@
+# =========================
+# BASE CONFIG
+# =========================
+baseURL = "https://blog.audricrosier.be"
+canonicalURL = "https://blog.audricrosier.be"
+title = "Ma vie au Japon – Blog d’expatriation, conseils et démarches"
+theme = "papermod"
+
+defaultContentLanguage = "fr"
+paginate = 10
+locale = "fr-fr"
+
+# =========================
+# LANGUAGES
+# =========================
+[languages]
+
+  [languages.fr]
+    languageName = "Français"
+    languageCode = "fr-FR"
+    weight = 1
+
+  [languages.ja]
+    languageName = "日本語"
+    languageCode = "ja-JP"
+    weight = 2
+
+# =========================
+# GLOBAL PARAMS (SEO / THEME)
+# =========================
+[params]
+  env = "production" # Active OpenGraph, Twitter Cards, JSON-LD
+  author = "Audric Rosier"
+
+  description = "Découvrez comment vivre au Japon : démarches, visa, logement, travail et conseils d’expatrié. Un blog complet pour réussir votre installation au Japon."
+
+  keywords = [
+    "Japon",
+    "expatrié belge Japon",
+    "visa Japon",
+    "vie au Japon",
+    "mariage belgo-japonais",
+    "démarches administratives Japon",
+    "résident étranger Japon",
+    "s'installer au Japon"
+  ]
+
+  # Logo / Label
+  [params.label]
+    text = "Ma vie au Japon"
+
+  # SEO Schema
+  [params.schema]
+    publisherType = "Person"
+
+  # Métadonnées articles
+  ShowReadingTime = true
+  ShowBreadCrumbs = true
+  mainSections = ["Blog"]
+
+  # Images (PaperMod)
+  [params.cover]
+    responsiveImages = true
+
+# =========================
+# IMAGE PROCESSING
+# =========================
+[imaging]
+  quality = 85
+  resampleFilter = "Lanczos"
