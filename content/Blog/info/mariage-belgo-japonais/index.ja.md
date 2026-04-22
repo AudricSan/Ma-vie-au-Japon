@@ -27,7 +27,7 @@ tags:
   - 印鑑
   - アポスティーユ
   - 翻訳
-slug: mariage-belgo-japonais
+slug: kokusai-kekkon-guide
 ---
 
 ベルギー人と日本人が日本で結婚することは可能ですが、事前にある程度の行政手続きの準備が必要です。  
@@ -189,5 +189,6 @@ slug: mariage-belgo-japonais
 
 * [ベルギー大使館（日本）](https://japan.diplomatie.belgium.be)
 * [日本外務省（MOFA）](https://www.mofa.go.jp)
-* [法務省 – 婚姻届](https://www.moj.go.jp/)
+* [法務省 – 婚姻届・戸籍](https://www.moj.go.jp/)
 * [ベルギー外務省](https://diplomatie.belgium.be)
+* [ベルギー連邦司法省 – アポスティーユ](https://justice.belgium.be/fr/themes_et_dossiers/apostille)

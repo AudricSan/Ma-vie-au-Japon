@@ -1,6 +1,6 @@
 ---
 title: "🧳 Check-list pour s’installer au Japon : avant, pendant et après l’arrivée"
-date: 2025-01-01
+date: 2024-04-01
 author: "Audric Rosier"
 description: "Guide complet pour s’installer au Japon : visa, logement, mairie, compte bancaire, carte SIM et budget réaliste pour les expatriés francophones."
 keywords:
@@ -374,4 +374,15 @@ Infraction administrative pouvant compliquer un renouvellement de visa.
 S’installer au Japon est un projet excitant, mais demande une préparation rigoureuse.
 
 En suivant cette check-list étape par étape, tu réduis fortement les risques d’erreurs administratives et financières.
+
+---
+
+## 📚 Sources utiles
+
+* [Immigration Services Agency of Japan](https://www.moj.go.jp/isa/index.html)
+* [Ambassade du Japon en Belgique](https://www.be.emb-japan.go.jp/)
+* [LINEMO – Abonnement mobile SoftBank](https://www.linemo.jp/)
+* Article lié : [Assurance maladie au Japon](/blog/info/assurance-maladie-japon/)
+* Article lié : [Ouvrir un compte bancaire au Japon](/blog/info/compte-bancaire-japon/)
+* Article lié : [Le My Number au Japon](/blog/info/my-number-japon/)
 

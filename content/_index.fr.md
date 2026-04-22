@@ -1,21 +1,5 @@
 ---
 date: 2025-01-01
-
-page_index: '0'
-show_pageimage: true
-image_width: 1000
-image_height: 300
-sitemap:
-    lastmod: '05-08-2025 01:25'
-subtitle: 'entre Belgique et Japon'
-menu: Home
-slug: home
-content:
-    items: '@page:/blog'
-    order:
-        by: date
-        dir: desc
-    limit: 3
 title: '🌸 Bienvenue sur mon blog'
 description: 'Un blog pour partager mon expérience de vie au Japon : récits, réflexions, ressources pratiques.'
 ---

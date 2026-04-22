@@ -23,7 +23,7 @@ tags:
   - "みなし再入国許可"
   - "日本への帰国"
   - 手続き
-slug: revenir-au-japon
+slug: sainyukoku-tetsuzuki
 ---
 
 
@@ -51,7 +51,7 @@ slug: revenir-au-japon
 💡 **例**：在留資格が2026年3月まで有効な場合、2025年8月に出国しても、**必ず2026年3月までに帰国**する必要があります。
 
 👉 詳細は公式サイト：  
-[みなし再入国許可 (Immigration Bureau)](http://www.imi-moj.go.jp/english/tetuduki/zairyuu/specialre-entrypermit.html)
+[みなし再入国許可 (Immigration Services Agency)](https://www.moj.go.jp/isa/index.html)
 
 ---
 
@@ -192,10 +192,10 @@ slug: revenir-au-japon
 
 ---
 
-## 参考資料
-- [2.8 Re-entry permission | JETRO](https://www.jetro.go.jp/en/invest/setting_up/section2/page8.html)  
-- [神戸大学 – Re-entry](https://www.kobe-u.ac.jp/en/academics/study-in-japan/re-entry/)  
-- [東京工業大学 – Special Re-entry Permit](https://www.iad.titech.ac.jp/ifr/guest/immigration/re-entry-permits/)  
-- [千葉大学 – Visa & Re-entry](https://www.chiba-u.ac.jp/international/isd/en/visa/permission.html)  
-- [JETRO USA – Re-entry Permission](https://www.jetro.go.jp/usa/re-entry-permission.html)
+## 📚 参考資料
+
+* [出入国在留管理庁 – 再入国許可（公式）](https://www.moj.go.jp/isa/index.html)
+* [2.8 Re-entry permission | JETRO](https://www.jetro.go.jp/en/invest/setting_up/section2/page8.html)
+* [神戸大学 – Re-entry](https://www.kobe-u.ac.jp/en/academics/study-in-japan/re-entry/)
+* [千葉大学 – Visa & Re-entry](https://www.chiba-u.ac.jp/international/isd/en/visa/permission.html)
 

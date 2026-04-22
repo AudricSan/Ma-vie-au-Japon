@@ -1,6 +1,6 @@
 ---
 title: '💍 Se marier au Japon : le guide complet'
-date: 2025-01-01
+date: 2024-12-15
 author: "Audric Rosier"
 description: "Guide complet pour se marier au Japon entre un(e) Belge et un(e) Japonais(e) : démarches, documents et reconnaissance en Belgique."
 keywords:
@@ -189,5 +189,6 @@ En respectant les étapes, tout se passe sans difficulté.
 
 * [Ambassade de Belgique au Japon – Mariage](https://japan.diplomatie.belgium.be)
 * [Ministry of Foreign Affairs of Japan (MOFA)](https://www.mofa.go.jp)
-* [法務省 – 婚姻届](https://www.moj.go.jp/)
+* [法務省 – 婚姻届 et registre familial](https://www.moj.go.jp/)
 * [SPF Affaires étrangères – Mariage à l’étranger](https://diplomatie.belgium.be)
+* [SPF Justice Belgique – Apostille](https://justice.belgium.be/fr/themes_et_dossiers/apostille)

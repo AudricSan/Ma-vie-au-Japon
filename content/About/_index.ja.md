@@ -65,7 +65,7 @@ show_title: false
 
 ## 🐹 個人的なマスコット
 
-<img src="/tecart-media/Mascotte.png" width="200" alt="ハムスター" />  
+<img src="/img/Mascotte.png" width="200" alt="ハムスター" />  
 この小さなマスコットは、**ハムスター**です。  
 なぜかというと…私の家にも一匹いるからです。  
 

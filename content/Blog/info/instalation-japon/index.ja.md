@@ -27,7 +27,7 @@ tags:
   - "在留カード"
   - "SIMカード"
   - "生活費"
-slug: instalation-japon
+slug: nihon-iju-checklist
 ---
 
 日本への移住は簡単ではありません。ビザ、役所手続き、健康保険、住居など、期限付きで行うべき重要な手続きが多数あります。
@@ -323,3 +323,14 @@ LINEMOはSoftBank回線を使用するオンライン専用のSIMサービスで
 日本移住は準備が重要です。
 
 このチェックリストを使えば、多くのトラブルを避けることができます。
+
+---
+
+## 📚 参考・関連情報
+
+* [出入国在留管理庁](https://www.moj.go.jp/isa/index.html)
+* [在日ベルギー大使館](https://www.be.emb-japan.go.jp/)
+* [LINEMO – SoftBankのオンラインSIM](https://www.linemo.jp/)
+* 関連記事：[日本の健康保険：外国人のためのガイド](/blog/info/assurance-maladie-japon/)
+* 関連記事：[日本で銀行口座を開く](/blog/info/compte-bancaire-japon/)
+* 関連記事：[マイナンバーとは？](/blog/info/my-number-japon/)

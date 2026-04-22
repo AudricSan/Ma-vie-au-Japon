@@ -1,23 +1,7 @@
 ---
 date: 2025-01-01
-
-page_index: '0'
-show_pageimage: true
-image_width: 1000
-image_height: 300
-sitemap:
-    lastmod: '05-08-2025 01:25'
 title: ようこそ
-subtitle: ベルギーと日本のあいだで
-menu: ホーム
-slug: home
-show_title: '1'
-content:
-    items: '@page:/blog'
-    order:
-        by: date
-        dir: desc
-    limit: 3
+description: '日本での暮らしを綴るブログ：体験談、手続きガイド、日常の発見。'
 ---
 
 
@@ -64,27 +48,6 @@ content:
 ---
 
 ## 📚 最新記事
-
-{% set blog_page = page.find('/blog') %}
-{% if blog_page %}
-  {% set all_articles = blog_page.children(false).order('date', 'desc') %}
-  {% set articles = all_articles|slice(0, 3) %}
-  <ul>
-    {% for article in articles %}
-      <li style="margin-bottom: 1em;">
-        <a href="{{ article.url }}"><strong>{{ article.title }}</strong></a><br />
-        <small>🗓️ {{ article.date|date("Y年m月d日") }}</small><br />
-        {% if article.summary %}
-          <p>{{ article.summary }}</p>
-        {% else %}
-          <p>{{ article.content|striptags|truncate(150) }}</p>
-        {% endif %}
-      </li>
-    {% endfor %}
-  </ul>
-{% else %}
-  <p>📂 /blog フォルダが見つかりませんでした。</p>
-{% endif %}
 
 🔗 [→ 記事一覧を見る](/blog)
 

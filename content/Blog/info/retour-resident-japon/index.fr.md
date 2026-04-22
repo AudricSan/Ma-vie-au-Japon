@@ -1,6 +1,6 @@
 ---
-title: 'Quitter temporairement le Japon : revenir sans perdre son statut de résident'
-date: 2025-01-01
+title: '🪃 Quitter temporairement le Japon : revenir sans perdre son statut de résident'
+date: 2025-09-01
 author: "Audric Rosier"
 description: "Démarches à suivre pour quitter temporairement le Japon et revenir avec sa carte de résident (zairyuu card) : special re-entry permit et re-entry permit classique."
 keywords:
@@ -64,7 +64,7 @@ Ce formulaire est remis à l’aéroport avant votre départ. Il est composé de
 - **[ARRIVAL]** : à remettre à votre retour.
 
 📸 Exemple :  
-![Formulaire à remplir](formulaire-re-entry-permit.png?resize=700&quality=80 "Formulaire à remplir")
+![Formulaire à remplir](formulaire-re-entry-permit.png "Formulaire à remplir")
 
 ---
 
@@ -194,9 +194,9 @@ En revanche, pour une absence plus longue, préparez un **Re-Entry Permit** avan
 
 ---
 
-## Sources  
-- [2.8 Re-entry permission | JETRO](https://www.jetro.go.jp/en/invest/setting_up/section2/page8.html)  
-- [Kobe University – Re-entry](https://www.kobe-u.ac.jp/en/academics/study-in-japan/re-entry/)  
-- [Tokyo Tech – Special Re-entry Permit](https://www.iad.titech.ac.jp/ifr/guest/immigration/re-entry-permits/)  
-- [Chiba University – Visa & Re-entry](https://www.chiba-u.ac.jp/international/isd/en/visa/permission.html)  
-- [JETRO USA – Re-entry Permission](https://www.jetro.go.jp/usa/re-entry-permission.html)  
+## 📚 Sources utiles
+
+* [Immigration Services Agency – Re-entry Permit (source officielle)](https://www.moj.go.jp/isa/index.html)
+* [2.8 Re-entry permission | JETRO](https://www.jetro.go.jp/en/invest/setting_up/section2/page8.html)
+* [Kobe University – Re-entry](https://www.kobe-u.ac.jp/en/academics/study-in-japan/re-entry/)
+* [Chiba University – Visa & Re-entry](https://www.chiba-u.ac.jp/international/isd/en/visa/permission.html)
