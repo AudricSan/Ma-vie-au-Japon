@@ -2,6 +2,7 @@
 title: '日常生活'
 description: '日本の日常で気づいたこと、文化の違い、小さな発見を綴ります。'
 hideTitle: true
+weight: 2
 ---
 
 # 🗓️ 日常生活

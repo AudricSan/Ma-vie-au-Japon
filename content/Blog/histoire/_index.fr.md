@@ -1,7 +1,8 @@
 ---
-title: 'Histoire'
+title: 'Récits'
 description: 'Récits et témoignages personnels'
 hideTitle: true
+weight: 3
 ---
 
 # 📖 Histoire

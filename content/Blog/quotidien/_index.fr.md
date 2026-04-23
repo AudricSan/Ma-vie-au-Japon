@@ -2,6 +2,7 @@
 title: 'Vie quotidienne'
 description: 'Observations, différences culturelles et petits moments du quotidien japonais.'
 hideTitle: true
+weight: 2
 ---
 
 # 🗓️ Vie quotidienne

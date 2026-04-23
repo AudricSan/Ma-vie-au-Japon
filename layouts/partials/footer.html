@@ -40,24 +40,30 @@
     </div>
 
     {{/* ── Navigation ──────────────────────────── */}}
+    {{- with site.Menus.main }}
     <nav class="site-footer__col" aria-label="Navigation principale">
-      <h3 class="site-footer__heading">Navigation</h3>
+      <h3 class="site-footer__heading">{{ i18n "footer_nav" | default "Navigation" }}</h3>
       <ul class="site-footer__list">
-        <li><a href="{{ "/" | absLangURL }}">Accueil</a></li>
-        <li><a href="{{ "/Blog/" | absLangURL }}">Blog</a></li>
-        <li><a href="{{ "/About/" | absLangURL }}">À propos</a></li>
-        <li><a href="{{ "/Contact/" | absLangURL }}">Contact</a></li>
+        {{- range . }}
+        <li><a href="{{ .URL | absLangURL }}">{{ .Name }}</a></li>
+        {{- end }}
       </ul>
     </nav>
+    {{- end }}
 
-    {{/* ── Catégories = sections Blog ──────────── */}}
+    {{/* ── Catégories = sous-sections de Blog ──── */}}
+    {{- with site.GetPage "/Blog" }}
+    {{- with .Sections }}
     <nav class="site-footer__col" aria-label="Catégories">
-      <h3 class="site-footer__heading">Catégories</h3>
+      <h3 class="site-footer__heading">{{ i18n "footer_categories" | default "Catégories" }}</h3>
       <ul class="site-footer__list">
-        <li><a href="{{ "/Blog/info/" | absLangURL }}">Guides pratiques</a></li>
-        <li><a href="{{ "/Blog/histoire/" | absLangURL }}">Récits</a></li>
+        {{- range sort . "Weight" }}
+        <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+        {{- end }}
       </ul>
     </nav>
+    {{- end }}
+    {{- end }}
 
     {{/* ── Légal ───────────────────────────────── */}}
     <div class="site-footer__col">
@@ -67,6 +73,18 @@
         <li><a href="{{ "/confidentialite/" | absLangURL }}">Confidentialité</a></li>
         <li><a href="{{ "/index.xml" | absLangURL }}" type="application/rss+xml">RSS</a></li>
         <li><a href="/sitemap.xml">Sitemap</a></li>
+      </ul>
+    </div>
+
+    {{/* ── Projet ──────────────────────────────── */}}
+    <div class="site-footer__col">
+      <h3 class="site-footer__heading">Projet</h3>
+      <ul class="site-footer__list">
+        <li>
+          <a href="https://github.com/AudricSan/Ma-vie-au-Japon" target="_blank" rel="noopener noreferrer">
+            Code source
+          </a>
+        </li>
       </ul>
     </div>
 

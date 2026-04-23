@@ -52,7 +52,7 @@ Et aussi un jeu discret : mon nom de famille, **Rosier**, est un arbre. Ce kanji
 
 ## 🐹 Une mascotte très personnelle
 
-<img src="/img/Mascotte.png" width="200" alt="Hamster" />  
+{{< figure src="/img/Mascotte.png" width="200" alt="Hamster" >}}
 Cette mascotte, c’est un **hamster** — tout simplement parce que j’en ai un chez moi.  
 Il est curieux, discret, drôle parfois. Il me ressemble un peu, je crois.  
 Il m’accompagne ici et là sur ce site, comme une présence familière entre les lignes.

@@ -65,7 +65,7 @@ show_title: false
 
 ## 🐹 個人的なマスコット
 
-<img src="/img/Mascotte.png" width="200" alt="ハムスター" />  
+{{< figure src="/img/Mascotte.png" width="200" alt="ハムスター" >}}
 この小さなマスコットは、**ハムスター**です。  
 なぜかというと…私の家にも一匹いるからです。  
 

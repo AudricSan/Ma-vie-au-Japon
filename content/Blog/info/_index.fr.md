@@ -1,7 +1,8 @@
 ---
-title: 'Info'
+title: 'Guides pratiques'
 description: 'Informations pratiques sur la vie au Japon'
 hideTitle: true
+weight: 1
 ---
 
 # ℹ️ Info

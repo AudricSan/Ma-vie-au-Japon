@@ -55,7 +55,7 @@ description: '日本での暮らしを綴るブログ：体験談、手続きガ
 
 ## 🐹 マスコット紹介
 
-<img src="/tecart-media/Mascotte.png" width="200" alt="ハムスター" />  
+{{< figure src="/tecart-media/Mascotte.png" width="200" alt="ハムスター" >}}
 この小さな好奇心旺盛な仲間は、サイトにちょっとした遊び心を加えたくて生まれました。  
 ページのあちこちで、さりげなく登場します。（ちなみに、まだ名前はありません…）
 
