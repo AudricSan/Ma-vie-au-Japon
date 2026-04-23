@@ -11,11 +11,8 @@ hideTitle: true
 
 ---
 
-📬 **メールはこちら：**
-
-[lhub.ulb.it@gmail.com](mailto:lhub.ulb.it@gmail.com?subject=Contact%20via%20Ma%20vie%20au%20Japon)
+{{< contact-form lang="ja" >}}
 
 ---
 
 > 私は法律や行政の専門家ではありません。このブログの情報は私自身の経験に基づいています。正式な手続きについては、必ず関係機関にご確認ください。
-

@@ -11,11 +11,8 @@ Je lis tous les messages et je réponds dès que possible.
 
 ---
 
-📬 **Par e-mail :**
-
-[lhub.ulb.it@gmail.com](mailto:lhub.ulb.it@gmail.com?subject=Contact%20via%20Ma%20vie%20au%20Japon)
+{{< contact-form lang="fr" >}}
 
 ---
 
 > Je ne suis pas un expert juridique ou administratif. Les informations partagées ici sont basées sur ma propre expérience. Pour toute démarche officielle, vérifiez auprès des autorités compétentes.
-
